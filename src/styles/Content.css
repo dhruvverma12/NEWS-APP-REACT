@@ -1,0 +1,50 @@
+.content-container {
+  padding: 1rem;
+  display: flex; /* Display articles side-by-side (adjust as needed) */
+  flex-wrap: wrap;
+}
+
+.article-card {
+  margin: 1rem; /* Spacing between articles */
+  border: 1px solid #ddd; /* Light gray border for articles */
+  border-radius: 4px; /* Rounded corners for articles */
+  padding: 1rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow for articles */
+  width: 500px;
+}
+
+.article-card-top{
+  height: 400px;
+  width: 100%;
+}
+
+.article-image {
+  width: 100%; /* Ensure images fill card width */
+  height: 100%;
+  object-fit: cover; /* Crop images to fit within card dimensions */
+}
+
+.article-card h2 {
+  margin: 0.5rem 0; /* Spacing between title and description */
+  font-size: 1.2rem; /* Adjust font size for headings */
+  font-weight: bold; /* Make headings bolder */
+}
+
+.read-more {
+  color: #007bff; /* Blue color for "Read more" link */
+  text-decoration: none; /* Remove underline from link */
+}
+
+.read-more:hover { /* Style on hover for "Read more" link */
+  text-decoration: underline; /* Add underline on hover */
+}
+
+/* Media Queries for Responsive Layout (add more as needed) */
+
+@media (max-width: 768px) {
+  .content-container {
+    flex-direction: column; /* Stack articles vertically on smaller screens */
+  }
+}
+
+ 

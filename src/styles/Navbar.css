@@ -1,0 +1,48 @@
+.navbar {
+    background-color: #fff;
+    /* Light background for header */
+    color: #333;
+    /* Dark text for header */
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    /* Align search bar and button vertically */
+    justify-content: space-between;
+    /* Space evenly between items */
+}
+
+.hero-image {
+    width: 100px;
+    /* Maintain image aspect ratio */
+    object-fit: cover;
+    /* Crop images to fit within navbar */
+    margin-right: 1rem;
+    /* Add spacing between image and search bar */
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    /* Light gray border for search bar */
+    border-radius: 4px;
+    /* Rounded corners for search bar */
+}
+
+.search-button {
+    background-color: #007bff;
+    /* Blue background for search button */
+    color: #fff;
+    /* White text for search button */
+    border: none;
+    /* Remove default border from button */
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    /* Rounded corners for search button */
+    cursor: pointer;
+    /* Indicate clickable button */
+}
