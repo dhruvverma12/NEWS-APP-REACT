@@ -1,6 +1,6 @@
 
 
-import React, { useState, useEffect } from 'react';
+import React, { useState} from 'react';
 import Navbar from './Navbar';
 import Content from './Content';
 
@@ -9,7 +9,7 @@ const ParentElement = () => {
   const [news, setNews] = useState([]);
 
   const fetchNews = async () => {
-    const url =  `https://newsapi.org/v2/everything?q=${data}&from=2024-02-10&sortBy=publishedAt&apiKey=52d685f8f19d450384bbb613c17c34e6`;
+    const url =  `https://newsapi.org/v2/everything?q=${data}&sortBy=publishedAt&apiKey=52d685f8f19d450384bbb613c17c34e6`;
 
     try {
       const response = await fetch(url);
